@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Ссылки на университет</title>
+    </head>
+
+    <body>
+
+        <header style="margin:0;">
+            <img id="logotype" src="kubsu.jpg" alt="Логотип КубГУ">
+            
+            <nav class="c1">
+                <a class="c2" href="https://www.kubsu.ru/ru/university">О университете</a>
+                <a class="c2" href="https://kubsu.ru/">Главный сайт</a>
+                <a class="c2" href="https://www.kubsu.ru/news">Новости</a>
+            </nav>
+
+        <h1>Ссылки на университет</h1>
+        </header>
+
+        <div class="content"><ul>
+        <li><a href="http://kubsu.ru/">Абсолютная гиперссылка</a></li>
+        <li><a href="https://kubsu.ru/">В другом протоколе</a></li>
+        <li>Ссылка-изображение<a href="http://kubsu.ru/">
+            <img src="image.jpg" width="300" height="200" alt="Здание" ></a></li>
+        <li><a href="/abiturient.html">Сокращенная на внутр страницу</a></li>
+        <li><a href="/index.html">Сокращенная на главную</a></li>
+        <li><a href="#telephone">Фрагмент страницы</a></li>
+        <li><a href="http://kubsu.ru/abiturient/news?p1=1&p2=2&p3=2">С тремя параметрами</a></li>
+        <li><a href="https://moodle.kubsu.ru/course/view.php?id=780">С параметром ID</a></li>
+        <li><a href="./main.html">Относительная в текущем каталоге</a></li>
+        <li><a href="./About/about.html">Относительную в каталоге about</a></li>
+        <li><a href="../index.html">Относительная на страницу в катологе выше</a></li>
+        <li><a href="./About/Catalog/leveltwo.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li><p>Контекстная в абзаце: Будучи высшим учебным заведением классического образования, Кубанский <a href="http://kubsu.ru/">госуниверситет</a> уверенно смотрит в будущее и настроен на новые победы.</p></li>
+        <li><a href="https://www.kubsu.ru/ru/node/7773#zone-user">Фрагмент стороннего сайта</a></li>
+        <li>Из прямоугольных и круглых областей картинки<img class = "pic" src="figure.jpg" width="2000" height="1500" usemap="#map" alt="Здание2">
+            <map name="map"> <area shape="rect" 
+              coords="266,104,591,284" href="http://kubsu.ru/" alt = "Прямоугольник">
+              <area shape="circle" 
+              coords="426,432,80" href="https://ru.wikipedia.org" alt="Круг">              
+            </map></li>
+        <li><a href="">Пустой href</a></li>
+        <li><a>Без href</a></li>
+        <li><a href="http://kubsu.ru/" rel="nofollow">Нельзя перейти</a></li>
+        <li><a href="http://kubsu.ru/" rel = "noindex">Запрещенная для индексации</a></li>
+        <li>С подписями title:
+            <ol>
+            <li><a href="https://t.me/kubsunews" title = "Социальные сети">Телеграм КубГУ</a></li>
+            <li><a href="https://vk.com/kubsu_official" title = "Социальные сети">ВК КубГУ</a></li>
+            <li><a href="https://dzen.ru/kubsu?utm_referer=www.kubsu.ru" title = "Социальные сети">ЯндексДзен КубГУ</a></li>
+            </ol>
+        </li>
+
+        <li>На файл на сервере FTP с авторизацией</li>
+        </ul></div>
+        
+        <div class="content"><table>
+            <tr class="nechet">
+              <th>Направление</th>
+              <th>Код</th>
+              <th>Форма обучения</th>
+              <th>Бюджетные места</th>
+            </tr>
+            <tr class="chet">
+                <td>ПМИ</td>
+                <td>01.03.02</td>
+                <td>очная</td>
+                <td>60</td>
+            </tr>
+            <tr class="nechet">
+                <td>Фундам</td>
+                <td>02.03.02</td>
+                <td>очная</td>
+                <td>30</td>
+            </tr>
+            <tr class="chet">
+                <td>МатОбес</td>
+                <td>02.03.03</td>
+                <td>очная</td>
+                <td>30</td>
+            </tr>
+            <tr class="nechet">
+                <td>ПИ</td>
+                <td>09.03.03</td>
+                <td>очная</td>
+                <td>25</td>
+            </tr>
+            <tr class="chet">
+                <td>Математика</td>
+                <td>01.03.01</td>
+                <td>очная</td>
+                <td>30</td>
+            </tr>
+            <tr class="nechet">
+                <td>МиКН</td>
+                <td>02.03.01</td>
+                <td colspan="2">---</td>
+              </tr>
+        </table></div>
+
+        <div class="content">
+        <form action="/" method="POST">
+
+            <label>
+                ФИО: <br />
+                <input name="field-name"
+                type="text"
+                placeholder="Введите ваше ФИО" />
+            </label> <br />
+
+            <label id = "telephone"> 
+                Номер телефона: <br />
+                <input name="field-tel"
+                  type="tel"
+                  placeholder="Введите ваш номер" />
+            </label> <br />
+            
+            <label>
+                Email: <br />
+                <input name="field-email"
+                  type="email"
+                  placeholder="Введите вашу почту" />
+            </label> <br />
+            
+            <label>
+                Дата рождения: <br />
+                <input name="field-date"
+                  value="2023-09-12"
+                  type="date" />
+            </label><br />
+            
+            <label>
+                Пол: <br />
+                <input type="radio" checked="checked"
+                name="radio-group-1" value="1" />
+                Женский</label>
+            <label>
+                <input type="radio"
+                name="radio-group-1" value="2" />
+                Мужской</label> <br />
+
+            <label>
+            Любимый язык программирования: <br />
+            <select name="field-name-4[]"
+            multiple="multiple">
+            <option value="1">Pascal</option>
+            <option value="2" selected="selected">C</option>
+            <option value="3" selected="selected">C++</option>
+            <option value="4" selected="selected">JavaScript</option>
+            <option value="5" selected="selected">PHP</option>
+            <option value="6" selected="selected">Python</option>
+            <option value="7" selected="selected">Java</option>
+            <option value="8" selected="selected">Haskel</option>
+            <option value="9" selected="selected">Clojure</option>
+            <option value="10" selected="selected">Prolog</option>
+            <option value="11" selected="selected">Scala</option>
+            </select>
+            </label> <br />
+
+            <label>
+                Биография: <br />
+                <textarea name="field-name-2">Я программист</textarea>
+            </label> <br />
+            
+            <label>
+                С контрактом ознакомлен(а) <br />
+                <input type="submit" value="Сохранить"
+                name="check-1" />
+            </label> <br />
+
+        </form></div>
+    
+        <footer>
+            <div class="f1">
+            <h2 class="f2">(c) Потапова Дарья</h2>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
