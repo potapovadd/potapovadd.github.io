@@ -42,6 +42,9 @@ nav{
     background-color:#a6c6db;  
 }
 
+.content-4{
+    padding:0;
+}
 
 .pic{
     height:200px;
@@ -100,9 +103,7 @@ footer{
         margin-right:80px;
     }
     .content1, .content2, .content3 { 
-        width:800px; 
         margin:10px auto;
     }
-
 }
 
