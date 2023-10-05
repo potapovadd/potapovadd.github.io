@@ -105,5 +105,9 @@ footer{
     .content1, .content2, .content3 { 
         margin:10px auto;
     }
+
+    .content-4{
+    padding:0;
+    }
 }
 
