@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="calculator.js" defer></script>
+  
+</head>
+
+<body>
+
+    <div class="w-100 text-center mx-auto">
+
+        <header>
+            <h1>Курсы по разработке</h1>
+        </header>
+        
+        <ul>
+            <p><img src="data.jpg" width="500" height="500" alt="Product1">
+            <img src="python.jpg" width="500" height="500" alt="Product2">
+            <img src="fullstack.jpg" width="500" height="500" alt="Product3">
+            </p>
+        </ul>
+        
+
+        <form action="/">
+            <input id = "field1" name="field1" type="text" placeholder="Введите кол-во товара">
+            <select id ="select1" name="select1">
+                <option value="v1">Data Scientist</option>
+                <option value="v2">Phyton-разработчик</option>
+                <option value="v3">FullStack-разработчик</option>
+            </select>
+            <label for="f1">
+                <input id="f1" type="submit" value="Рассчитать стоимость">
+            </label> 
+        </form>
+        <div id = "r"></div>
+
+    </div>
+</body>
+</html>
