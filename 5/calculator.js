@@ -9,7 +9,7 @@ variant.set("v1", 3000);
 variant.set("v2", 2000);
 variant.set("v3", 1500);
 
-function Summa() {
+function Summa(event) {
     event.preventDefault();
     let f1 = document.getElementById("field1").value;
     let m = f1.match(/^[0-9]+$/);
