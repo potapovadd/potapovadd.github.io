@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="calculator.js" defer></script>
+  
+</head>
+
+<body>
+
+    <div class="w-100 text-center mx-auto">
+
+        <header>
+            <h1>Курсы по разработке</h1>
+        </header>
+        
+        <ul>
+            <img src="data.jpg" width="500" height="500" alt="Product1">
+            <img src="python.jpg" width="500" height="500" alt="Product2">
+            <img src="fullstack.jpg" width="500" height="500" alt="Product3">
+        </ul>
+        
+
+        <form action="/">
+            <input id = "field1" name="field1" type="text" placeholder="Введите кол-во товара">
+
+            <div class="myradios" id="myradios">
+                <label><input type="radio" name="myradio" value="1000"> Индивидуальные занятия</label>
+                <label><input type="radio" name="myradio" value="500"> Занятия в группе</label>
+                <label><input type="radio" name="myradio" value="300"> Видео-курс</label>
+            </div> 
+
+            <div id = "select" style="display: none;">
+                <label for ="select1">
+                    <select id ="select1" name="select1">
+                        <option value="3000">Data Scientist</option>
+                        <option value="2000">Phyton-разработчик</option>
+                        <option value="1500">FullStack-разработчик</option>
+                    </select>
+                </label>
+            </div>
+            
+            <div id="checkbox" style="display: none;">
+                <br><label>
+                    <input type="checkbox" value="100" name="check-1">
+                    Уведомлять меня о начале занятия
+                </label>
+            </div>
+
+            <br><label for="f1">
+                    <input id="f1" type="submit" value="Рассчитать стоимость">
+            </label> 
+
+
+            <div>
+                <label for="result">
+                  Итого:
+                  <span id="result">0</span>
+                </label>
+              </div>
+        </form>
+
+    </div>
+</body>
+</html>
