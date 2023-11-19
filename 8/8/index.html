@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="sending.js" defer></script>
+
+    <title>Форма обратной связи</title>
+</head>
+
+<body>
+    <button id="startButton">Нажмите</button>
+
+    <div id="popup" class="popup">
+        <div class="main">
+            <span class="close">&times;</span>
+                <section class="formCont">
+                    <form id="feedbackForm" action="https://formcarry.com/s/wZEF7db2Np" method="POST" enctype="application/x-www-form-urlencoded">
+
+                        <div class="formField">
+                            <label for="fc-generated-1-name">ФИО</label>
+                            <input type="text" name="name" id="fc-generated-1-name" placeholder="Введите имя" required />
+                        </div>
+
+                        <div class="formField">
+                            <label for="fc-generated-1-email">Email</label>
+                            <input type="email" name="email" id="fc-generated-1-email" placeholder="Введите почту" required />
+                        </div>
+
+                        <div class="formField">
+                            <label for="fc-generated-1-phone">Телефон</label>
+                            <input type="tel" name="phone" id="fc-generated-1-phone" placeholder="Введите номер телефона" required />
+                        </div>
+
+                        <div class="formField">
+                            <label for="fc-generated-1-organization">Организация</label>
+                            <input type="text" name="organization" id="fc-generated-1-organization" placeholder="Введите название организации" />
+                        </div>
+
+                        <div class="formField">
+                            <label for="fc-generated-1-message">Сообщение</label>
+                            <textarea name="message" id="fc-generated-1-message" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+
+                        <div class="formField">
+                            <input type="checkbox" name="agreement" id="fc-generated-1-agreement" required />
+                            <label for="fc-generated-1-agreement">Я согласен с политикой обработки персональных данных</label>
+                        </div>
+
+                        <div class="formField">
+                            <button type="submit">Отправить</button>
+                        </div>
+
+                    </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
